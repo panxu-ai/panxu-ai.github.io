@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="Description" content="I am a final year Ph.D. candidate in the Computer Science Department at the University of California, Los Angeles.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="site.css">
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$','$'],['\\(','\\)'] ],
+    displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+    processEscapes: true,      
+    processEnvironments: true, 
+    processRefs: true       
+  },
+  options: {
+   ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+</script>
+
+
+<title>Pan Xu</title>
+</head>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-54048675-2', 'auto');
+	ga('send', 'pageview');
+</script>
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+	<a class="nav-link" href="panxu-ai.github.io"><b><font size="+3" color=black face="AREIAL,sans-serif"><big>Pan Xu</big></font></b></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">        
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+		<a class="nav-link" href="panxu-ai.github.io"><font size="5">&nbsp;&nbsp;&nbsp;Home</font></a>
+		</li>
+		<li class="nav-item active">
+		<a class="nav-link" href="publication"><font size="5">&nbsp;&nbsp;&nbsp;Publications</font><span class="sr-only">(current)</span></a>
+		</li>        
+		<li class="nav-item">
+		<a class="nav-link" href="teaching"><font size="5">&nbsp;&nbsp;&nbsp;Teaching</font></a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="service"><font size="5">&nbsp;&nbsp;&nbsp;Services</font></a>
+		</li>			
+	</ul>	 
+	<span style="float: left"><a href="myname"><img src="image/name_ch.png" width="90"></a></span>
+	</div>
+</nav>
+
+<div class="container">
+
+
+<!-- 
+<p><h3>Journals</h3></p> 
+<ul>
+	
+</ul> -->
+
+<p><h5>PUBLICATIONS</h5>
+  <p>Full publication list can be found on <a href="https://scholar.google.com/citations?user=UkYBx6YAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+  <sup>*</sup> indicates equal contribution.
+  </p>
+</p> 	  
+<ul>
+<li><span class="paper-title">Langevin Monte Carlo for Contextual Bandits</span> <br>
+<b>Pan Xu</b>, Hongkai Zheng, Eric Mazumdar, Kamyar Azizzadenesheli, Anima Anandkumar<br>
+<span class="publisher">In Proc. of the 39th International Conference on Machine Learning (<b>ICML</b>), Baltimore, Maryland, USA, 2022.</span><br>
+[<a data-toggle="collapse" href="#xu2022langevin-abstract" class="my_details">Summary</a>] [<a href="https://arxiv.org/abs/2206.11254">Paper</a>] [<a href="https://github.com/devzhk/LMCTS">Code</a>]
+<div>
+  <p id="xu2022langevin-abstract" class="abstract collapse">We propose an efficient posterior sampling algorithm, viz., Langevin Monte Carlo Thompson Sampling (LMC-TS), that uses Markov Chain Monte Carlo (MCMC) methods to directly sample from the posterior distribution in contextual bandits. Our method is computationally efficient since it only needs to perform noisy gradient descent updates without constructing the Laplace approximation of the posterior distribution. We prove that the proposed algorithm achieves the same sublinear regret bound as the best Thompson sampling algorithms for a special case of contextual bandits, viz., linear contextual bandits. We conduct experiments on both synthetic data and real-world datasets on different contextual bandit models, which demonstrates that directly sampling from the posterior is both computationally efficient and competitive in performance.
+  </p>
+</div>
+</li><br>
+
+<li><span class="paper-title">Neural Contextual Bandits with Deep Representation and Shallow Exploration</span> <br>
+<b>Pan Xu</b>, Zheng Wen, Handong Zhao, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 10th International Conference on Learning Representations (<b>ICLR</b>), Online, 2022.</span><br>
+[<a data-toggle="collapse" href="#xu2022neural-abstract" class="my_details">Summary</a>] [<a href="https://openreview.net/forum?id=xnYACQquaGV">Paper</a>] [<a href="https://openreview.net/attachment?id=xnYACQquaGV&name=supplementary_material">Code</a>]
+<div>
+  <p id="xu2022neural-abstract" class="abstract collapse">We study neural contextual bandits, a general class of contextual bandits, where each context-action pair is associated with a raw feature vector, but the specific reward generating function is unknown. We propose a novel learning algorithm that transforms the raw feature vector using the last hidden layer of a deep ReLU neural network (deep representation learning), and uses an upper confidence bound (UCB) approach to explore in the last linear layer (shallow exploration). We prove that under standard assumptions, our proposed algorithm achieves $\widetilde{O}(\sqrt{T})$ finite-time regret, where $T$ is the learning time horizon. Compared with existing neural contextual bandit algorithms, our approach is computationally much more efficient since it only needs to explore in the last layer of the deep neural network.
+  </p>
+</div>
+</li><br>
+
+<li><span class="paper-title">Adaptive Sampling for Heterogeneous Rank Aggregation from Noisy Pairwise Comparisons</span> <br>
+Yue Wu*, Tao Jin*, Hao Lou, <b>Pan Xu</b>, Farzad Farnoud, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 25th International Conference on Artificial Intelligence and Statistics (<b>AISTATS</b>), Online, 2022.</span><br>
+[<a data-toggle="collapse" href="#wu2022adaptive-abstract" class="my_details">Summary</a>] [<a href="https://arxiv.org/abs/2110.04136">Paper</a>]
+<div>
+  <p id="wu2022adaptive-abstract" class="abstract collapse">In heterogeneous rank aggregation problems, users often exhibit various accuracy levels when comparing pairs of items. Thus, a uniform querying strategy over users may not be optimal. To address this issue, we propose an elimination-based active sampling strategy, which estimates the ranking of items via noisy pairwise comparisons from multiple users and improves the users' average accuracy by maintaining an active set of users. We prove that our algorithm can return the true ranking of items with high probability. We also provide a sample complexity bound for the proposed algorithm, which outperforms the non-active strategies in the literature and close to oracle under mild conditions. Experiments are provided to show the empirical advantage of the proposed methods over the state-of-the-art baselines.
+  </p>
+</div>
+</li><br>	
+
+<li><span class="paper-title">Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US</span><br>
+Estee Y Cramer, ... , <b>Pan Xu</b>, ... , Nicholas G. Reich. <br>
+<span class="publisher">Proceedings of the National Academy of Sciences (<b>PNAS</b>), Volume 119, No. 15, 2022.</span><br>
+[<a data-toggle="collapse" href="#cramer2022evaluation-abstract" class="my_details">Summary</a>] [<a href="https://www.pnas.org/doi/10.1073/pnas.2113561119">Paper</a>]
+<div>
+  <p id="cramer2022evaluation-abstract" class="abstract collapse">This paper compares the probabilistic accuracy of short-term forecasts of reported deaths due to COVID-19 during the first year and a half of the pandemic in the United States. Results show high variation in accuracy between and within stand-alone models and more consistent accuracy from an ensemble model that combined forecasts from all eligible models. This demonstrates that an ensemble model provided a reliable and comparatively accurate means of forecasting deaths during the COVID-19 pandemic that exceeded the performance of all of the models that contributed to it. This work strengthens the evidence base for synthesizing multiple models to support public-health action.
+  </p>
+</div>  	
+</li><br>	
+
+<li><span class="paper-title">Double Explore-then-Commit: Asymptotic Optimality and Beyond</span> <br>
+Tianyuan Jin, <b>Pan Xu</b>, Xiaokui Xiao, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 34th Annual Conference on Learning Theory (<b>COLT</b>), Online, 2021.</span><br>
+This work has been presented at the <span class="publisher"><a href="https://offline-rl-neurips.github.io/">NeurIPS 2020 Offline Reinforcement Learning Workshop</a></span>.<br>
+[<a data-toggle="collapse" href="#jin2021double-abstract" class="my_details">Summary</a>] [<a href="https://proceedings.mlr.press/v134/jin21a">Paper</a>]
+<div>
+  <p id="jin2021double-abstract" class="abstract collapse">We propose a double explore-then-commit (DETC) algorithm that has two exploration and exploitation phases and show that it  can achieve the asymptotically optimal regret bound. To our knowledge, DETC is the first non-fully-sequential algorithm that achieves asymptotic optimality. In addition, we extend DETC to batched bandit problems, where (i) the exploration process is split into a small number of batches and (ii) the round complexity is of central interest. We prove that a batched version of DETC can achieve the asymptotic optimality with only a constant round complexity. This is the first batched bandit algorithm that can attain the optimal asymptotic regret bound and optimal round complexity simultaneously.
+  </p>
+</div>
+</li><br>	
+
+<li><span class="paper-title">Faster Convergence of Stochastic Gradient Langevin Dynamics for Non-Log-Concave Sampling</span> <br>
+Difan Zou, <b>Pan Xu</b>, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 37th International Conference on Uncertainty in Artificial Intelligence (<b>UAI</b>), Online, 2021.</span> <br>
+[<a data-toggle="collapse" href="#zou2021faster-abstract" class="my_details">Summary</a>] [<a href="https://proceedings.mlr.press/v161/zou21a.html">Paper</a>]
+<div>
+  <p id="zou2021faster-abstract" class="abstract collapse">We provide a new  convergence analysis of stochastic gradient Langevin dynamics (SGLD) for sampling from a class of distributions that can be non-log-concave.  At the core of our approach is a novel conductance analysis of SGLD using an auxiliary time-reversible Markov Chain. Under certain conditions on the target distribution, we prove that $\widetilde O(d^4\epsilon^{-2})$ stochastic gradient evaluations suffice to guarantee $\epsilon$-sampling error in terms of the total variation distance, where $d$ is the problem dimension. This improves existing results on the convergence rate of SGLD \citep{raginsky2017non,xu2018global}. We further show that provided an additional Hessian Lipschitz condition on the log-density function, SGLD is guaranteed to achieve $\epsilon$-sampling error within $\widetilde O(d^{15/4}\epsilon^{-3/2})$ stochastic gradient evaluations. Our proof technique provides a new way to study the convergence of Langevin based algorithms, and sheds some light on the design of fast stochastic gradient based sampling algorithms.
+  </p>
+</div>
+</li><br>	
+
+<li><span class="paper-title">MOTS: Minimax Optimal Thompson Sampling</span> <br>
+Tianyuan Jin, <b>Pan Xu</b>, Jieming Shi, Xiaokui Xiao, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 38th International Conference on Machine Learning (<b>ICML</b>), Online, 2021.</span><br>	
+[<a data-toggle="collapse" href="#jin2021mots-abstract" class="my_details">Summary</a>] [<a href="https://proceedings.mlr.press/v139/jin21d.html">Paper</a>]
+<div>
+  <p id="jin2021mots-abstract" class="abstract collapse">Thompson sampling is one of the most widely used algorithms for many online decision problems, due to its simplicity in implementation and superior empirical performance over other state-of-the-art methods. Despite its popularity and empirical success, it has remained an open problem whether Thompson sampling can match the minimax lower bound $\Omega(\sqrt{KT})$ for $K$-armed bandit problems, where $T$ is the total time horizon. In this paper, we solve this long open problem by proposing a variant of Thompson sampling called MOTS that adaptively clips the sampling instance of the chosen arm at each time step. We prove that this simple variant of Thompson sampling achieves the minimax optimal regret bound $O(\sqrt{KT})$ for finite time horizon $T$, as well as the asymptotic optimal regret bound for Gaussian rewards when $T$ approaches infinity. To our knowledge, MOTS is the first Thompson sampling type algorithm that achieves the minimax optimality for multi-armed bandit problems.
+  </p>
+</div>
+</li><br>	
+
+<li><span class="paper-title">Almost Optimal Anytime Algorithm for Batched Multi-Armed Bandits</span> <br>
+Tianyuan Jin, Jing Tang, <b>Pan Xu</b>, Keke Huang, Xiaokui Xiao, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 38th International Conference on Machine Learning (<b>ICML</b>), Online, 2021.</span><br>	
+[<a data-toggle="collapse" href="#jin2021almost-abstract" class="my_details">Summary</a>] [<a href="https://proceedings.mlr.press/v139/jin21c.html">Paper</a>]
+<div>
+  <p id="jin2021almost-abstract" class="abstract collapse">In batched multi-armed bandit problems, the learner can adaptively pull arms and adjust strategy in batches. In many real applications, not only the regret but also the batch complexity need to be optimized. Existing batched bandit algorithms usually assume that the time horizon $T$ is known in advance. However, many applications involve an unpredictable stopping time. In this paper, we study the anytime batched multi-armed bandit problem. We propose an anytime algorithm that achieves the asymptotically optimal regret for exponential families of reward distributions with $\mathcal{O}(\log \log T\cdot \ilog^{\alpha} (T))$ batches, where $\alpha\in \mathcal{O}_{T}(1)$. Moreover, we prove that for any constant $c>0$, no algorithm can achieve the asymptotically optimal regret within $c \log \log T$ batches.
+  </p>
+</div>
+</li><br>
+
+<li><span class="paper-title">A Finite-Time Analysis of Two Time-Scale Actor-Critic Methods</span> <br>
+Yue Wu, Weitong Zhang, <b>Pan Xu</b>, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 33rd Conference on Advances in Neural Information Processing Systems (<b>NeurIPS</b>), Online, 2020.</span><br>
+This work has been presented at the <span class="publisher"><a href="https://wensun.github.io/rl_theory_workshop_2020_ICML.github.io/">ICML 2020 Theoretical Foundations of Reinforcement Learning Workshop.</a></span><br>
+[<a data-toggle="collapse" href="#wu2020finite-abstract" class="my_details">Summary</a>] [<a href="https://proceedings.neurips.cc/paper/2020/hash/cc9b3c69b56df284846bf2432f1cba90-Abstract.html">Paper</a>]
+<div>
+  <p id="wu2020finite-abstract" class="abstract collapse">We provide a non-asymptotic analysis for two time-scale actor-critic methods under non-i.i.d. setting. We prove that the actor-critic method is guaranteed to find a first-order stationary point (i.e., $\|\nabla J(\theta)\|_2^2 \le \epsilon$) of the non-concave performance function $J({\theta})$, with $\mathcal{\widetilde{O}}(\epsilon^{-2.5})$ sample complexity. To the best of our knowledge, this is the first work providing finite-time analysis and sample complexity bound for two time-scale actor-critic methods.
+  </p>
+</div>
+</li><br>	
+
+<li><span class="paper-title">A Finite-Time Analysis of Q-Learning with Neural Network Function Approximation</span><br>
+<b>Pan Xu</b>, Quanquan Gu <br>
+<span class="publisher">In Proc. of the 37th International Conference on Machine Learning (<b>ICML</b>), Online, 2020.</span><br>
+[<a data-toggle="collapse" href="#xu2020finite-abstract" class="my_details">Summary</a>] [<a href="http://proceedings.mlr.press/v119/xu20c.html">Paper</a>]
+<div>
+  <p id="xu2020finite-abstract" class="abstract collapse">We present a finite-time analysis of a neural Q-learning algorithm, where the data are generated from a Markov decision process, and the action-value function is approximated by a deep ReLU neural network. We prove that neural Q-learning finds the optimal policy with an $O(1/\sqrt{T})$ convergence rate if the neural function approximator is sufficiently overparameterized, where $T$ is the number of iterations. To our best knowledge, our result is the first finite-time analysis of neural Q-learning under non-i.i.d. data assumption.
+  </p>
+</div>
+</li><br>	
+
+<li><span class="paper-title">Stochastic Nested Variance Reduction for Nonconvex Optimization</span> <br>
+Dongruo Zhou, <b>Pan Xu</b>, Quanquan Gu <br>
+<span class="publisher">Journal of Machine Learning Research (<b>JMLR</b>), Volume 21, No. 103, 2020.</span><br>
+The <a href="#zhou2018stochastic-neurips">short version</a> of this paper has been published in NeurIPS 2018. The journal version extends the original SNVRG algorithm for finding first order stationary points to local minimum finding algorithms by incorporating this manuscript: <a href="https://arxiv.org/abs/1806.08782">Finding Local Minima via Stochastic Nested Variance Reduction</a>. <br>  
+[<a data-toggle="collapse" href="#zhou2020stochastic-abstract" class="my_details">Summary</a>] [<a href="https://www.jmlr.org/papers/v21/18-447.html">Paper</a>]
+<div>
+  <p id="zhou2020stochastic-abstract" class="abstract collapse">In this journal version of SNVRG, we further propose two algorithms that can find local minima faster than state-of-the-art algorithms in both finite-sum and general stochastic (online) nonconvex optimization. In particular, for finite-sum optimization problems, the proposed $\text{SNVRG}+\text{Neon2}^{\text{finite}}$ algorithm achieves $\tilde{O}(n^{1/2}\epsilon^{-2}+n\epsilon_H^{-3}+n^{3/4}\epsilon_H^{-7/2})$ gradient complexity to converge to an $(\epsilon, \epsilon_H)$-second-order stationary point, which outperforms $\text{SVRG}+\text{Neon2}^{\text{finite}}$ \citep{allen2018neon2}, the best existing algorithm, in a wide regime. For general stochastic optimization problems, the proposed $\text{SNVRG}+\text{Neon2}^{\text{online}}$ achieves $\tilde{O}(\epsilon^{-3}+\epsilon_H^{-5}+\epsilon^{-2}\epsilon_H^{-3})$ gradient complexity, which is better than both $\text{SVRG}+\text{Neon2}^{\text{online}}$ \citep{allen2018neon2} and Natasha2 \citep{allen2017natasha2} in certain regimes. 
+  Thorough experimental results on different nonconvex optimization problems back up our theory.
+  </p>
+</div>
+</li><br>
+
+<li id="jin2020rank"><span class="paper-title">Sample Efficient Policy Gradient Methods with Recursive Variance Reduction</span> <br>
+<b>Pan Xu</b>, Felicia Gao, Quanquan Gu<br> 
+<span class="publisher">In Proc. of the 8th International Conference on Learning Representations (<b>ICLR</b>), Addis Ababa, Ethiopia, 2020.</span><br>
+Partial results of this work have been presented at the <span class="publisher"><a href="https://optrl2019.github.io/"> NeurIPS 2019 Optimization Foundations of Reinforcement Learning Workshop</a></span>, Vancouver, Canada, 2019 and the <span class="publisher"><a href="https://sites.google.com/view/RL4RealLife#h.p_E8GavvJ-X7nT">2020 Virtual Conference on Reinforcement Learning for Real Life.</a></span><br>
+[<a data-toggle="collapse" href="#xu2020sample-abstract" class="my_details">Summary</a>] [<a href="https://arxiv.org/abs/1909.08610">Paper</a>] [<a href="paper/poster_neurips19_optrl_srvrpg_portrait.pdf">Poster</a>] [<a href="https://github.com/xgfelicia/SRVRPG">Code</a>] [<a href="https://youtu.be/9fj6LEyaX-k">Video</a>]
+<div>
+  <p id="xu2020sample-abstract" class="abstract collapse">We propose a novel policy gradient algorithm called SRVR-PG, which only requires $O(1/\epsilon^{3/2})$ episodes to find an $\epsilon$-approximate stationary point of the nonconcave performance function $J(\boldsymbol{\theta})$ (i.e., $\boldsymbol{\theta}$ such that $\|\nabla J(\boldsymbol{\theta})\|_2^2\leq\epsilon$). This sample complexity improves the existing result $O(1/\epsilon^{5/3})$ for stochastic variance reduced policy gradient algorithms by a factor of $O(1/\epsilon^{1/6})$. In addition, we also propose a variant of SRVR-PG with parameter exploration, which explores the initial policy parameter from a prior probability distribution. We conduct numerical experiments on classic control problems in reinforcement learning to validate the performance of our proposed algorithms.
+  </p>
+</div>
+</li><br>
+
+<li><span class="paper-title">Rank Aggregation via Heterogeneous Thurstone Preference Models</span> <br>
+Tao Jin*, <b>Pan Xu</b>*, Quanquan Gu, Farzad Farnoud<br>
+<span class="publisher">In Proc. of the 34th Conference on Artificial Intelligence (<b>AAAI</b>), New York, New York, USA, 2020.</span> <span class="publish-type">[Oral presentation, 4.5%]</span><br>
+[<a data-toggle="collapse" href="#jin2020rank-abstract" class="my_details">Summary</a>] [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/5860">Paper</a>] [<a href="https://github.com/tao-j/hra">Code</a>]
+<div>
+  <p id="jin2020rank-abstract" class="abstract collapse">We propose the Heterogeneous Thurstone Model (HTM) for aggregating ranked data, which can take the accuracy levels of different users into account. By allowing different noise distributions, the proposed HTM model maintains the generality of Thurstone's original framework, and as such, also extends the Bradley-Terry-Luce (BTL) model for pairwise comparisons to heterogeneous populations of users. Under this framework, we also propose a rank aggregation algorithm based on alternating gradient descent to estimate the underlying item scores and accuracy levels of different users simultaneously from noisy pairwise comparisons. We theoretically prove that the proposed algorithm converges linearly up to a statistical error which matches that of the state-of-the-art method for the single-user BTL model. We evaluate the  proposed HTM model and algorithm on both synthetic and real data, demonstrating that it outperforms existing methods.
+  </p>
+</div>
+</li><br>
+<!-- </ul>
+
+<p><h3>2019</h3>	
+<ul> -->
+<li><span class="paper-title">Stochastic Gradient Hamiltonian Monte Carlo Methods with Recursive Variance Reduction</span> <br>
+Difan Zou, <b>Pan Xu</b>, Quanquan Gu <br>
+<span class="publisher">In Proc. of the 32nd Conference on Advances in Neural Information Processing Systems (<b>NeurIPS</b>), Vancouver, Canada, 2019.</span><br>
+[<a data-toggle="collapse" href="#zou2019stochastic-abstract" class="my_details">Summary</a>] [<a href="https://papers.nips.cc/paper/2019/hash/c3535febaff29fcb7c0d20cbe94391c7-Abstract.html">Paper</a>] [<a href="paper/poster_neurips19_sghmc.pdf">Poster</a>]
+<div>
+  <p id="zou2019stochastic-abstract" class="abstract collapse">
+    Stochastic Gradient Hamiltonian Monte Carlo (SGHMC) algorithms have received increasing attention in both theory and practice. In this paper, we propose a Stochastic Recursive Variance-Reduced gradient HMC (SRVR-HMC) algorithm. It makes use of a semi-stochastic gradient estimator that recursively accumulates the gradient information to reduce the variance of the stochastic gradient. We provide a convergence analysis of SRVR-HMC for sampling from a class of non-log-concave distributions and show that SRVR-HMC converges faster than all existing HMC-type algorithms based on underdamped Langevin dynamics. Thorough experiments on synthetic and real-world datasets validate our theory and demonstrate the superiority of SRVR-HMC.
+  </p>
+</div>    
+</li><br>
+
+<li id="xu2019improved"><span class="paper-title">Stochastic Variance-Reduced Cubic Regularization Methods</span> <br>
+Dongruo Zhou, <b>Pan Xu</b>, Quanquan Gu <br>
+<span class="publisher">Journal of Machine Learning Research (<b>JMLR</b>), Volume 20, No. 134, 2019.</span><br>
+The <a href="#zhou2018stochastic-icml">short version</a> of this paper has been published in ICML 2018. The journal version extends the SVRC algorithm to a sample-efficient one proposed in this manuscript: <a href="https://arxiv.org/abs/1811.11989">Sample Efficient Stochastic Variance-Reduced Cubic Regularization Method</a>. <br>
+[<a data-toggle="collapse" href="#zhou2019stochastic-abstract" class="my_details">Summary</a>] [<a href="https://jmlr.org/papers/v20/19-055.html">Paper</a>]
+<div>
+  <p id="zhou2019stochastic-abstract" class="abstract collapse">To reduce the sample complexity of Hessian matrix computation in SVRC, we also propose a sample efficient stochastic variance-reduced cubic regularization (Lite-SVRC) algorithm for finding the local minimum more efficiently. Lite-SVRC converges to an $(\epsilon,\sqrt{\epsilon})$-approximate local minimum within $\tilde{O}(n+n^{2/3}/\epsilon^{3/2})$ Hessian sample complexity, which is faster than all existing cubic regularization based methods. Numerical experiments with different nonconvex optimization problems conducted on real datasets validate our theoretical results for both SVRC and Lite-SVRC. 
+  </p>
+</div>  
+</li><br>
+
+<li><span class="paper-title">An Improved Convergence Analysis of Stochastic Variance-Reduced Policy Gradient</span> <br>
+<b>Pan Xu</b>, Felicia Gao, Quanquan Gu <br>
+<span class="publisher">In Proc. of the 35th International Conference on Uncertainty in Artificial Intelligence (<b>UAI</b>), Tel Aviv, Israel, 2019. </span><span class="publish-type">[Oral presentation, 7.8%]</span><br>
+[<a data-toggle="collapse" href="#xu2019improved-abstract" class="my_details">Summary</a>] [<a href="https://arxiv.org/abs/1905.12615">Paper</a>]
+<div>
+  <p id="xu2019improved-abstract" class="abstract collapse">We revisit the stochastic variance-reduced policy gradient (SVRPG) method proposed by \citet{papini2018stochastic} for reinforcement learning. We provide an improved convergence analysis of SVRPG and show that it can find an $\epsilon$-approximate stationary point of the performance function within $O(1/\epsilon^{5/3})$ trajectories. This sample complexity improves upon the best known result $O(1/\epsilon^2)$ by a factor of $O(1/\epsilon^{1/3})$. At the core of our analysis is (i) a tighter upper bound for the variance of importance sampling weights, where we prove that the variance can be controlled by the parameter distance between different policies; and (ii) a fine-grained analysis of the epoch length and batch size parameters such that we can significantly reduce the number of trajectories required in each iteration of SVRPG. We also empirically demonstrate the effectiveness of our theoretical claims of batch sizes on  reinforcement learning benchmark tasks. 
+  </p>
+</div>
+</li><br>	
+
+<li id="xu2018global"><span class="paper-title">Sampling from Non-Log-Concave Distributions via Variance-Reduced Gradient Langevin Dynamics</span><br>
+Difan Zou, <b>Pan Xu</b>, Quanquan Gu <br>
+<span class="publisher">In Proc. of the 22nd International Conference on Artificial Intelligence and Statistics (<b>AISTATS</b>), Naha, Okinawa, Japan, 2019. </span><br>
+[<a data-toggle="collapse" href="#zou2019sampling-abstract" class="my_details">Summary</a>] [<a href="http://proceedings.mlr.press/v89/zou19a.html">Paper</a>]
+<div>
+  <p id="zou2019sampling-abstract" class="abstract collapse">We study stochastic variance reduction-based Langevin dynamic algorithms, SVRG-LD and SAGA-LD \citep{dubey2016variance}, for sampling from non-log-concave distributions. Under certain assumptions on the log density function, we establish the convergence guarantees of SVRG-LD and SAGA-LD in $2$-Wasserstein distance. More specifically, we show that both SVRG-LD and SAGA-LD require $ \tilde O\big(n+n^{3/4}/\epsilon^2 + n^{1/2}/\epsilon^4\big)\cdot \exp\big(\tilde O(d+\gamma)\big)$ stochastic gradient evaluations to achieve $\epsilon$-accuracy in $2$-Wasserstein distance, which outperforms the $ \tilde O\big(n/\epsilon^4\big)\cdot \exp\big(\tilde O(d+\gamma)\big)$ gradient complexity achieved by Langevin Monte Carlo Method \citep{raginsky2017non}. Experiments on synthetic data and real data back up our theory.
+  </p>
+</div>
+</li><br>
+<!-- </ul>
+
+<p><h3>2018</h3>	
+<ul>	 -->	
+<li><span class="paper-title">Global Convergence of Langevin Dynamics Based Algorithms for Nonconvex Optimization</span> <br>
+<b>Pan Xu</b>*, Jinghui Chen*, Difan Zou, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 31st Conference on Advances in Neural Information Processing Systems (<b>NeurIPS</b>), Montréal, Canada, 2018.</span> <span class="publish-type">[Spotlight presentation, 3.5%]</span><br>
+[<a data-toggle="collapse" href="#xu2018global-abstract" class="my_details">Summary</a>] [<a href="https://arxiv.org/abs/1707.06618">Paper</a>] [<a href="https://www.youtube.com/watch?v=07NTtzlXE8Y">Video</a>]
+<div>
+  <p id="xu2018global-abstract" class="abstract collapse">We present a unified framework to analyze the global convergence of Langevin dynamics based algorithms for nonconvex finite-sum optimization with $n$ component functions.  At the core of our analysis is a direct analysis of the ergodicity of the numerical approximations to Langevin dynamics, which leads to faster convergence rates. Specifically, we show that gradient Langevin dynamics (GLD) and stochastic gradient Langevin dynamics (SGLD)  converge to the $\textit{almost minimizer}$ within $\widetilde O\big(nd/(\lambda\epsilon) \big)$ and $\widetilde O\big(d^7/(\lambda^5\epsilon^5) \big)$ stochastic gradient evaluations respectively, where $d$ is the problem dimension, and $\lambda$ is the spectral gap of the Markov chain generated by GLD. Both results improve upon the best known gradient complexity results \citep{raginsky2017non}. Furthermore, for the first time we prove the global convergence guarantee for variance reduced stochastic gradient Langevin dynamics (SVRG-LD) to the almost minimizer within $\widetilde O\big(\sqrt{n}d^5/(\lambda^4\epsilon^{5/2})\big)$ stochastic gradient evaluations, which outperforms the gradient complexities of GLD and SGLD in a wide regime. Our theoretical analyses shed some light on using Langevin dynamics based algorithms for nonconvex optimization with provable guarantees.
+  </p>
+</div>
+</li><br>	
+
+<li id="zhou2018stochastic-neurips"><span class="paper-title">Stochastic Nested Variance Reduction for Nonconvex Optimization</span> <br>
+Dongrou Zhou, <b>Pan Xu</b>, Quanquan Gu <br>
+<span class="publisher">In Proc. of the 31st Conference on Advances in Neural Information Processing Systems (<b>NeurIPS</b>), Montréal, Canada, 2018.</span> <span class="publish-type">[Spotlight presentation, 3.5%]</span><br>
+[<a data-toggle="collapse" href="#zhou2018stochastic-neurips-abstract" class="my_details">Summary</a>] [<a href="https://arxiv.org/abs/1806.07811">Paper</a>] [<a href="https://www.youtube.com/watch?v=xB1bFoYTgXQ&t=55s">Video</a>]
+<div>
+  <p id="zhou2018stochastic-neurips-abstract" class="abstract collapse">We study finite-sum nonconvex optimization problems, where the objective function is an average of $n$ nonconvex functions. We propose a new stochastic gradient descent algorithm based on nested variance reduction. Compared with conventional stochastic variance reduced gradient (SVRG) algorithm that uses two reference points to construct a semi-stochastic gradient with diminishing variance in each iteration, our algorithm uses $K+1$ nested reference points to build a semi-stochastic gradient to further reduce its variance in each iteration. For smooth nonconvex functions, the proposed algorithm converges to an $\epsilon$-approximate first-order stationary point (i.e., $\|\nabla F(\mathbf{x})\|_2\leq \epsilon$) within $\widetilde O(n\land \epsilon^{-2}+\epsilon^{-3}\land n^{1/2}\epsilon^{-2})$ number of stochastic gradient evaluations. This improves the best known gradient complexity of SVRG $O(n+n^{2/3}\epsilon^{-2})$ and that of SCSG $O(n\land \epsilon^{-2}+\epsilon^{-10/3}\land n^{2/3}\epsilon^{-2})$. For gradient dominated functions, our algorithm also achieves better gradient complexity than the state-of-the-art algorithms. Thorough experimental results on different nonconvex optimization problems back up our theory.
+  </p>
+</div>
+</li><br>
+
+<li><span class="paper-title">Third-order Smoothness Helps: Even Faster Stochastic Optimization Algorithms for Finding Local Minima</span> <br>
+Yaodong Yu*, <b>Pan Xu</b>*, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 31st Conference on Advances in Neural Information Processing Systems (<b>NeurIPS</b>), Montréal, Canada, 2018.</span><br>
+[<a data-toggle="collapse" href="#yu2018third-abstract" class="my_details">Summary</a>] [<a href="https://proceedings.neurips.cc/paper/2018/hash/fea9c11c4ad9a395a636ed944a28b51a-Abstract.html">Paper</a>] [<a href="https://www.youtube.com/watch?v=jNH3zqRbPNQ">Video</a>]
+<div>
+  <p id="yu2018third-abstract" class="abstract collapse">We propose stochastic optimization algorithms that can find local minima faster than existing algorithms for nonconvex optimization problems, by exploiting the third-order smoothness to escape non-degenerate saddle points more efficiently. More specifically, the proposed algorithm only needs $\tilde{O}(\epsilon^{-10/3})$ stochastic gradient evaluations to converge to an approximate local minimum $\mathbf{x}$, which satisfies $\|\nabla f(\mathbf{x})\|_2\leq\epsilon$ and $\lambda_{\min}(\nabla^2 f(\mathbf{x}))\geq -\sqrt{\epsilon}$ in unconstrained stochastic optimization, where $\tilde{O}(\cdot)$ hides logarithm polynomial terms and constants. This improves upon the $\tilde{O}(\epsilon^{-7/2})$ gradient complexity achieved by the state-of-the-art stochastic local minima finding algorithms by a factor of $\tilde{O}(\epsilon^{-1/6})$. Experiments on two nonconvex optimization problems demonstrate the effectiveness of our algorithm and corroborate our theory.
+  </p>
+</div>
+</li><br>
+
+<li><span class="paper-title">Subsampled Stochastic Variance-Reduced Gradient Langevin Dynamics</span><br>
+Difan Zou*, <b>Pan Xu</b>*, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 34th International Conference on Uncertainty in Artificial Intelligence (<b>UAI</b>), Monterey, California, USA, 2018. </span><br>
+[<a data-toggle="collapse" href="#zou2018subsampled-abstract" class="my_details">Summary</a>] [<a href="http://auai.org/uai2018/proceedings/papers/192.pdf">Paper</a>]
+<div>
+  <p id="zou2018subsampled-abstract" class="abstract collapse">Stochastic variance-reduced gradient Langevin dynamics (SVRG-LD) was recently proposed to improve the performance of stochastic gradient Langevin dynamics (SGLD) by reducing the variance of the stochastic gradient. In this paper, we propose a variant of SVRG-LD, namely SVRG-LD$^+$, which replaces the full gradient in each epoch with a subsampled one. We provide a nonasymptotic analysis of the convergence of SVRG-LD$^+$ in $2$-Wasserstein distance, and show that SVRG-LD$^+$ enjoys a lower gradient complexity than SVRG-LD, when the sample size is large or the target accuracy requirement is moderate. Our analysis directly implies a sharper convergence rate for SVRG-LD, which improves the existing convergence rate by a factor of $\kappa^{1/6}n^{1/6}$, where $\kappa$ is the condition number of the log-density function and $n$ is the sample size. Experiments on both synthetic and real-world datasets validate our theoretical results.
+  </p>
+</div>
+</li><br>
+
+<li><span class="paper-title">Continuous and Discrete-Time Accelerated Stochastic Mirror Descent for Strongly Convex Functions</span><br>
+<b>Pan Xu</b>*, Tianhao Wang*, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 35th International Conference on Machine Learning (<b>ICML</b>), Stockholm, Sweden, 2018. </span><br>
+[<a data-toggle="collapse" href="#xu2018continuous-abstract" class="my_details">Summary</a>] [<a href="http://proceedings.mlr.press/v80/xu18g.html">Paper</a>]
+<div>
+  <p id="xu2018continuous-abstract" class="abstract collapse"> We provide a second-order stochastic differential equation (SDE), which characterizes the continuous-time dynamics of accelerated stochastic mirror descent (ASMD) for strongly convex functions. This SDE plays a central role in designing new discrete-time ASMD algorithms via numerical discretization and providing neat analyses of their convergence rates based on Lyapunov functions. Our results suggest that the only existing ASMD algorithm, namely, AC-SA proposed in \citet{ghadimi2012optimal} is one instance of its kind, and we can derive new instances of ASMD with fewer tuning parameters.This sheds light on revisiting accelerated stochastic optimization through the lens of SDEs, which can lead to a better understanding as well as new simpler algorithms of acceleration in stochastic optimization. Numerical experiments on both synthetic and real data support our theory. 
+  </p>
+</div>
+</li><br>
+
+<li id="zhou2018stochastic-icml"><span class="paper-title">Stochastic Variance-Reduced Cubic Regularized Newton Method</span><br>
+Dongruo Zhou, <b>Pan Xu</b>, Quanquan Gu <br>
+<span class="publisher">In Proc. of the 35th International Conference on Machine Learning (<b>ICML</b>), Stockholm, Sweden, 2018. </span><br>
+[<a data-toggle="collapse" href="#zhou2018stochastic-icml-abstract" class="my_details">Summary</a>] [<a href="http://proceedings.mlr.press/v80/zhou18d.html">Paper</a>] 
+<div>
+  <p id="zhou2018stochastic-icml-abstract" class="abstract collapse"> We propose a stochastic variance-reduced cubic regularized Newton method (SVRC) for non-convex optimization. At the core of our algorithm is a novel semi-stochastic gradient along with a semi-stochastic Hessian, which are specifically designed for cubic regularization method. We show that our algorithm is guaranteed to converge to an $(\epsilon,\sqrt{\epsilon})$-approximate local minimum within $\widetilde{O}(n^{4/5}/\epsilon^{3/2})$ second-order oracle calls, which outperforms the state-of-the-art cubic regularization algorithms including subsampled cubic regularization. Our work also sheds light on the application of variance reduction technique to high-order non-convex optimization methods. Thorough experiments on various non-convex optimization problems support our theory. 
+  </p>
+</div>
+</li><br>
+
+<li id="chen2018covariate"><span class="paper-title">Stochastic Variance-Reduced Hamilton Monte Carlo Methods</span><br>
+Difan Zou*, <b>Pan Xu</b>*, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 35th International Conference on Machine Learning (<b>ICML</b>), Stockholm, Sweden, 2018. </span><br>
+[<a data-toggle="collapse" href="#zou2018stochastic-abstract" class="my_details">Summary</a>] [<a href="https://arxiv.org/abs/1802.04791">Paper</a>]
+<div>
+  <p id="zou2018stochastic-abstract" class="abstract collapse">We propose a fast stochastic Hamilton Monte Carlo (HMC) method, for sampling from a smooth and strongly log-concave distribution. At the core of our proposed method is a variance reduction technique inspired by the recent advance in stochastic optimization. We show that, to achieve $\epsilon$ accuracy in 2-Wasserstein distance, our algorithm achieves $\tilde O\big(n+\kappa^{2}d^{1/2}/\epsilon+\kappa^{4/3}d^{1/3}n^{2/3}/\epsilon^{2/3}\big)$ gradient complexity (i.e., number of component gradient evaluations), which outperforms the state-of-the-art HMC and stochastic gradient HMC methods in a wide regime. We also extend our algorithm for sampling from smooth and general log-concave distributions, and prove the corresponding gradient complexity as well. Experiments on both synthetic and real data demonstrate the superior performance of our algorithm. 
+  </p>
+</div> 
+</li><br>
+
+<li><span class="paper-title">Covariate Adjusted Precision Matrix Estimation via Nonconvex Optimization</span><br>
+Jinghui Chen, <b>Pan Xu</b>, Lingxiao Wang, Jian Ma, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 35th International Conference on Machine Learning (<b>ICML</b>), Stockholm, Sweden, 2018.</span> <span class="publish-type">[Long talk, 8.6%]</span><br>
+[<a data-toggle="collapse" href="#chen2018covariate-abstract" class="my_details">Summary</a>] [<a href="http://proceedings.mlr.press/v80/chen18n.html">Paper</a>]
+<div>
+  <p id="chen2018covariate-abstract" class="abstract collapse">We propose a nonconvex estimator for the covariate adjusted precision matrix estimation problem in the high dimensional regime, under sparsity constraints. To solve this estimator, we propose an alternating gradient descent algorithm with hard thresholding. 
+  Compared with existing methods along this line of research, which lack theoretical guarantees in optimization error and/or statistical error, the proposed algorithm not only is computationally much more efficient with a linear rate of convergence, but also attains the optimal statistical rate up to a logarithmic factor. Thorough experiments on both synthetic and real data support our theory.
+  </p>
+</div>
+</li><br>
+
+<li><span class="paper-title">Accelerated Stochastic Mirror Descent: From Continuous-time Dynamics to Discrete-time Algorithms</span> <br>
+<b>Pan Xu</b>*, Tianhao Wang*, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 21st International Conference on Artificial Intelligence and Statistics (<b>AISTATS</b>), Playa Blanca, Lanzarote, Canary Islands, 2018. </span><br>
+[<a data-toggle="collapse" href="#xu2018accelerated-abstract" class="my_details">Summary</a>] [<a href="paper/AISTATS18.pdf">Paper</a>] 
+<div>
+  <p id="xu2018accelerated-abstract" class="abstract collapse">We present a new framework to analyze accelerated stochastic mirror descent through the lens of continuous-time stochastic dynamic systems. 
+ It enables us to design new algorithms, and perform a unified and simple analysis of the convergence rates of these algorithms. More specifically, under this framework, we provide a Lyapunov function based analysis for the continuous-time stochastic dynamics, as well as several new discrete-time algorithms derived from the continuous-time dynamics. We show that for general convex objective functions, the derived discrete-time algorithms attain the optimal convergence rate. Empirical experiments corroborate our theory.
+  </p>
+</div>
+</li><br>	
+<!-- </ul>
+
+<p><h3>2017</h3>	
+<ul> -->
+<li><span class="paper-title">Speeding Up Latent Variable Gaussian Graphical Model Estimation via Nonconvex Optimization</span> <br>
+<b>Pan Xu</b>, Jian Ma, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 30th Conference on Advances in Neural Information Processing Systems (<b>NIPS</b>), Long Beach, California, USA, 2017.</span><br>
+[<a data-toggle="collapse" href="#xu2017speed-abstract" class="my_details">Summary</a>] [<a href="https://proceedings.neurips.cc/paper/2017/hash/ae5e3ce40e0404a45ecacaaf05e5f735-Abstract.html">Paper</a>] [<a href="paper/poster_lvggm.pdf">Poster</a>] [<a href="https://github.com/thughost2/nonconvex-LVGGM">Code</a>] 
+<div>
+  <p id="xu2017speed-abstract" class="abstract collapse">We study the estimation of the latent variable Gaussian graphical model (LVGGM), where the precision matrix is the superposition of a sparse matrix and a low-rank matrix.  In order to speed up the estimation of the sparse plus low-rank components, we propose a sparsity constrained maximum likelihood estimator based on matrix factorization, and an efficient alternating gradient descent algorithm with hard thresholding to solve it. Our algorithm is orders of magnitude faster than the convex relaxation based methods for LVGGM. In addition, we prove that our algorithm is guaranteed to linearly converge to the unknown sparse and low-rank components up to the optimal statistical precision. Experiments on both synthetic and genomic data demonstrate the superiority of our algorithm over the state-of-the-art algorithms and corroborate our theory.  
+  </p>
+</div>
+</li><br>
+
+<li><span class="paper-title">Uncertainty Assessment and False Discovery Rate Control in High-Dimensional Granger Causal Inference</span><br>
+Aditya Chaudhry, <b>Pan Xu</b>, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 34th International Conference on Machine Learning (<b>ICML</b>), Sydney, Australia, 2017.</span><br>
+[<a data-toggle="collapse" href="#aditya2017uncertainty-abstract" class="my_details">Summary</a>] [<a href="http://proceedings.mlr.press/v70/chaudhry17a.html">Paper</a>]
+<div>
+  <p id="aditya2017uncertainty-abstract" class="abstract collapse">Causal inference among high-dimensional time series data proves an important research problem in many fields. In the classical regime, one often establishes causality among time series via a concept known as “Granger causality.” However, existing approaches for Granger causal inference in high-dimensional data lack the means to characterize the uncertainty associated with Granger causality estimates (e.g. p-values and confidence intervals). We make two contributions in this work. First, we introduce a novel unbiased estimator for assessing Granger causality in the high-dimensional regime. We propose test statistics and confidence intervals for our estimator to allow, for the first time, uncertainty characterization in high-dimensional Granger causal inference. Second, we introduce a novel method for false discovery rate control that achieves higher power in multiple testing than existing techniques and that can cope with dependent test statistics and dependent observations. We corroborate our theoretical results with experiments on both synthetic data and real-world climatological data.
+  </p>
+</div> 
+</li><br>
+
+<li><span class="paper-title">Efficient Algorithm for Sparse Tensor-variate Gaussian Graphical Models via Gradient Descent</span><br>
+<b>Pan Xu</b>, Tingting Zhang, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 20th International Conference on Artificial Intelligence and Statistics (<b>AISTATS</b>), Fort Lauderdale, Florida, USA, 2017.</span><br>
+[<a data-toggle="collapse" href="#xu2017efficient-abstract" class="my_details">Summary</a>] [<a href="http://proceedings.mlr.press/v54/xu17b.html">Paper</a>] 
+<div id="xu2017efficient-abstract" class="abstract collapse">
+	<p>We study the sparse tensor-variate Gaussian graphical model (STGGM), where each way of the tensor follows a multivariate normal distribution whose precision matrix has sparse structures. To estimate the precision matrices, we propose a sparsity constrained maximum likelihood estimator. However, due to the complex structure of the tensor-variate GGMs, the likelihood based estimator is non-convex, which poses great challenges for both computation and theoretical analysis. In order to address these challenges, we propose an efficient alternating gradient descent algorithm to solve this estimator and prove that, under certain conditions on the initial estimator, our algorithm is guaranteed to linearly converge to the unknown precision matrices up to the optimal statistical error. Experiments on both synthetic data and real world brain imaging data corroborate our theory.
+	</p>	
+</div>
+</li><br>
+<!-- </ul>
+
+<p><h3>2016</h3>	
+<ul> -->
+<li><span class="paper-title">Semiparametric Differential Graph Models</span> <br>
+<b>Pan Xu</b>, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 29th Conference on Advances in Neural Information Processing Systems (<b>NIPS</b>), Barcelona, Spain, 2016.</span><br>
+[<a data-toggle="collapse" href="#xu2016semiparametric-abstract" class="my_details">Summary</a>] [<a href="https://proceedings.neurips.cc/paper/2016/hash/f76a89f0cb91bc419542ce9fa43902dc-Abstract.html">Paper</a>] [<a href="https://youtu.be/zraGh6vWXt0">Video</a>]
+<div>
+  <p id="xu2016semiparametric-abstract" class="abstract collapse">In many cases of network analysis, it is more attractive to study how a network varies under different conditions than an individual static network. We propose a novel graphical model, namely the Latent Differential Graph Model, where the networks under two different conditions are represented by two semiparametric elliptical distributions respectively, and the variation of these two networks (i.e., differential graph) is characterized by the difference between their latent precision matrices. We propose an estimator for the differential graph based on quasi-likelihood maximization with nonconvex regularization. We show that our estimator attains a faster statistical rate in parameter estimation than the state-of-the-art methods, and enjoys the oracle property under mild conditions. Thorough experiments on both synthetic and real-world data support our theory.
+  </p>
+</div>  	
+</li><br>
+
+<li><span class="paper-title">Forward Backward Greedy Algorithms for Multi-Task Learning with Faster Rates</span><br>
+Lu Tian, <b>Pan Xu</b>, Quanquan Gu<br>
+<span class="publisher">In Proc. of the 32nd International Conference on Uncertainty in Artificial Intelligence (<b>UAI</b>), New York / New Jersey, USA, 2016.</span><br>
+[<a data-toggle="collapse" href="#tian2016forward-abstract" class="my_details">Summary</a>] [<a href="http://auai.org/uai2016/proceedings/papers/135.pdf">Paper</a>] 
+<div>
+  <p id="tian2016forward-abstract" class="abstract collapse">In this paper, we develop a multi-task learning algorithm with faster convergence rates. In particular, we propose a general estimator for multitask learning with row sparsity constraints on the parameter matrix. The proposed estimator is a nonconvex optimization problem. To solve it, we develop a forward backward greedy algorithm with provable guarantees. More specifically, we prove that the output of the greedy algorithm attains a sharper estimation error bound than state-of-the-art multi-task learning methods. Moreover, our estimator enjoys model selection consistency under mild conditions. Thorough experiments on both synthetic and real-world data demonstrate the effectiveness of our method and back up our theory.
+  </p>
+</div>
+</li>
+</ul>
+
+<p><h5>PREPRINTS</h5></p> 
+<ul>	
+<li>Finite-Time Regret of Thompson Sampling Algorithms for Exponential Family Multi-Armed Bandits [<a href="https://arxiv.org/abs/2206.03520">Paper</a>]<br>
+Tianyuan Jin, <b>Pan Xu</b>, Xiaokui Xiao, Anima Anandkumar, <span class="publisher">arXiv:2206.03520.</span>	
+</li><br>	
+<li>COVID-19 Reopening Strategies at the County Level in the Face of Uncertainty: Multiple Models for Outbreak Decision Support [<a href="https://www.medrxiv.org/content/10.1101/2020.11.03.20225409v1">Paper</a>]<br>
+Katriona Shea, ..., <b>Pan Xu</b>, ..., Michael C. Runge, <span class="publisher">medRxiv: 2020.11.03.20225409.</span><br>
+</li><br>		
+<li>Ensemble Forecasts of Coronavirus Disease 2019 (COVID-19) in the U.S. [<a href="https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1">Paper</a>]<br>
+COVID-19 Forecast Hub Consortium, <b>Pan Xu</b>, <span class="publisher">medRxiv: 2020.08.19.20177493.</span><br>	
+</li><br>	
+<li>Epidemic Model Guided Machine Learning for COVID-19 Forecasts in the United States [<a href="https://www.medrxiv.org/content/10.1101/2020.05.24.20111989v1">Paper</a>]<br>
+Difan Zou, Lingxiao Wang, <b>Pan Xu</b>, Jinghui Chen, Weitong Zhang, Quanquan Gu, <span class="publisher">medRxiv: 2020.05.24.2011198.</span><br>
+This work has been presented at the <span class="publisher"><a href="https://mlpcp21.github.io/index.html">ICLR 2021 Machine Learning for Preventing and Combating Pandemics Workshop</a></span> 	
+</li><br>				
+<li>Communication-efficient Distributed Estimation and Inference for Transelliptical Graphical Models [<a href="https://arxiv.org/abs/1612.09297">Paper</a>]<br>
+<b>Pan Xu</b>, Lu Tian, Quanquan Gu, <span class="publisher">arXiv:1612.09297.</span><br>
+This work has been presented at the <span class="publisher"><a href="https://www.enar.org/meetings/spring2016/">ENAR 2016 Spring Meeting</a></span>.<br>
+</li><br>
+</ul>
+
+</div>
+<br>
+<div style="display:none;width:300px;"><script type="text/javascript" src="//ri.revolvermaps.com/0/0/7.js?i=8y358xon9fx&amp;m=7&amp;s=320&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script> </div>
+
+</html>
+
