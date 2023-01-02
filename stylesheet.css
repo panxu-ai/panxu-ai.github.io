@@ -44,6 +44,14 @@ img.perc {
   display: block;
 }
 
+div.scroll {  
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+  text-align: justify;
+  padding: 20px;
+}
+
 .map{
     width: 100%;
     height: 50%;
@@ -67,7 +75,7 @@ img.perc {
 }
 @media (min-width: 1200px) {
     .container{
-        max-width: 1200px;
+        max-width: 1400px;
     }
 }
 
