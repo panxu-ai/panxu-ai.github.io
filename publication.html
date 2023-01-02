@@ -84,6 +84,16 @@ window.MathJax = {
 </p> 	  
 <ul>
 
+<li><span class="paper-title">Global Convergence of Localized Policy Iteration in Networked Multi-Agent Reinforcement Learning</span> <br>
+  Yizhou Zhang*, Guannan Qu*, <b>Pan Xu</b>*, Yiheng Lin, Zaiwei Chen, Adam Wierman<br>
+  <span class="publisher">To appear in Proceedings of the ACM on Measurement and Analysis of Computing Systems (POMACS). To be presented on the <b>ACM SIGMETRICS</b> conference, Orlando, Florida, USA, 2023.</span><br>
+  [<a data-toggle="collapse" href="#zhang2023global-abstract" class="my_details">Summary</a>] [<a href="https://arxiv.org/abs/2211.17116">Paper</a>] 
+<div>
+  <p id="jin2022finite-abstract" class="abstract collapse">We study a multi-agent reinforcement learning (MARL) problem where the agents interact over a given network. The goal of the agents is to cooperatively maximize the average of their entropy-regularized long-term rewards. To overcome the curse of dimensionality and to reduce communication, we propose a Localized Policy Iteration (LPI) algorithm that provably learns a near-globally-optimal policy using only local information. In particular, we show that, despite restricting each agent's attention to only its $\kappa$-hop neighborhood, the agents are able to learn a policy with an optimality gap that decays polynomially in $\kappa$. In addition, we show the finite-sample convergence of LPI to the global optimal policy, which explicitly captures the trade-off between optimality and computational complexity in choosing $\kappa$. Numerical simulations demonstrate the effectiveness of LPI. 
+  </p>
+</div>
+</li><br>
+
 <li><span class="paper-title">Finite-Time Regret of Thompson Sampling Algorithms for Exponential Family Multi-Armed Bandits</span> <br>
   Tianyuan Jin, <b>Pan Xu</b>, Xiaokui Xiao, Anima Anandkumar<br>
   <span class="publisher">In Proc. of the 35th Conference on Advances in Neural Information Processing Systems (<b>NeurIPS</b>), New Orleans, Louisiana, USA, 2022.</span><br>
@@ -97,7 +107,7 @@ window.MathJax = {
 <li><span class="paper-title">Active Ranking without Strong Stochastic Transitivity</span> <br>
   Hao Lou, Tao Jin, Yue Wu, <b>Pan Xu</b>, Farzad Farnoud, Quanquan Gu<br>
   <span class="publisher">In Proc. of the 35th Conference on Advances in Neural Information Processing Systems (<b>NeurIPS</b>), New Orleans, Louisiana, USA, 2022.</span><br>
-  [<a data-toggle="collapse" href="#lou2022active-abstract" class="my_details">Summary</a>] 
+  [<a data-toggle="collapse" href="#lou2022active-abstract" class="my_details">Summary</a>] [<a href="https://openreview.net/forum?id=Vhd-jh9B8Hc">Paper</a>]
 <div>
   <p id="lou2022active-abstract" class="abstract collapse">We consider the problem of recovering the exact full ranking for a list of items under ranking models that do \emph{not} assume the Strong Stochastic Transitivity property. We propose a $\delta$-correct algorithm, Probe-Rank, that actively learns the ranking of the items from noisy pairwise comparisons. We prove a sample complexity upper bound for Probe-Rank, which only depends on the preference probabilities between items that are adjacent in the true ranking. This improves upon existing sample complexity results that depend on the preference probabilities for all pairs of items. 
   </p>
